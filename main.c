@@ -150,19 +150,19 @@ int main(int argc, char *argv[]) {
 		//2-4. 동전 줍기
 		coinResult = board_getBoardCoin(pos);
 		player_coin[turn] += coinResult;
-		//printf("") 적절한 상황을 알려주기 동전 몇을 주웠다.. 이런식으로? 
+		printf("") //적절한 상황을 알려주기 동전 몇을 주웠다.. 이런식으로? 
 		
 		
 		//2-5.  다음 턴
 		//turn = turn+1; //계속 돌리면 turn이 플레이어 수보다 많아지면 뻗음 그래서 0,1,2 이렇게 반복시켜야함 
-		turn = (turn+1) % N_PLAYER; //0,1,2 만 반복 
+		turn = (turn+1) % N_PLAYER;		 //0,1,2 만 반복 
 		
 		//2-6. if (조건: 모든 플레이어가 한번씩 돌기)
 		if(turn == 0)
 		{
 			int shark_pos = board_stepShark();
-			//printf()
-			//checkDie();
+			printf("");
+			checkDie();
 			
 		 } 
 			//상어 동작
